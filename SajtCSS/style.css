@@ -1,0 +1,74 @@
+nav{
+    padding: 0;
+    background-color: rgb(172, 81, 28);
+    box-shadow: 3px 3px black;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    height: 20px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(33, 33, 241);    
+}
+nav a:hover{
+    color: rgb(140, 167, 10);
+    background-color: white;
+}
+body{
+    min-height: 100vh;
+    background-image: url(Slike/Aretruza.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: fantasy;
+}
+footer{
+    text-align:center;
+    padding:0;
+    position: absolute;
+    width:8%;
+    bottom:0; right:0;
+}
+#foota{color: brown;}
+div img{
+    animation:animacija 15s linear infinite;
+}
+@keyframes animacija {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@media screen and (max-width:680px){
+    body{
+        background-image:url(Slike/fireball.jpg);
+        width: 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        margin-bottom: 30px;
+        width: 100%;
+    }  
+    nav ul li a{        
+        padding: 15px;
+        font-size: 15px;
+        color: black;
+    }  
+    nav ul li a:hover{
+        background-color: blueviolet;
+    }
+}
